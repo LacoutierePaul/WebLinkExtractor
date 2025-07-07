@@ -8,7 +8,7 @@ RUN adduser --disabled-password --gecos '' appuser
 WORKDIR /home/appuser
 
 # Copier les fichiers nécessaires
-COPY ../Part4/extract_links.py .
+COPY ../Part4/extract_links_sleep.py .
 
 # Installer les dépendances avec sécurité
 RUN pip install --no-cache-dir requests beautifulsoup4
